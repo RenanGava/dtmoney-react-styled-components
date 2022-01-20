@@ -1,0 +1,23 @@
+import { useState } from 'react'
+import Modal from 'react-modal'
+import logoImg from '../../assets/logo.svg'
+import { Container, Content } from './styles'
+
+interface HeaderProps{
+    // a tipagem tem que ser cirada antes ou depois de passado o parametro no componente
+    // se não for criada a tipagem irá dar um erro na aplicação. 
+    onOpenNewTransactionModal: () => void
+}
+
+export function Header({onOpenNewTransactionModal}: HeaderProps){
+    return(
+        <Container>
+            <Content>
+                <img src={logoImg} alt="dtmoney" />
+                <button type="button" onClick={onOpenNewTransactionModal}>
+                    Nova Transação
+                </button>
+            </Content>
+        </Container>
+    )
+}
