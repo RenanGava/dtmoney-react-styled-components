@@ -4,7 +4,6 @@ import incomeImg from '../../assets/income.svg'
 import outcomeImg from '../../assets/outcome.svg'
 import closeImg from '../../assets/close.svg'
 import { FormEvent, useState } from 'react'
-import { api } from '../../Services/api'
 import { useTransactions } from '../../hooks/useTransactions'
 
 interface NewTransactionModalProps{
@@ -54,10 +53,10 @@ export function NewTransactionModal({isOpen, onRequestClose}:NewTransactionModal
         para resetar o valor dos campos do modal precisamos chamar os seus estados
         e colocalos de forma a entender que eles estão vazios
         */ 
-       setTitle('')
-       setAmount(0)
-       setCategory('')
-       setType('deposit')
+        setTitle('')
+        setAmount(0)
+        setCategory('')
+        setType('deposit')
         onRequestClose()
     }
 

@@ -6,7 +6,6 @@ import { NewTransactionModal } from "./components/NewTransactionModal";
 import { GlobalStyle } from "./styles/global";
 import { TransactionsProvider } from "./hooks/useTransactions";
 
-
 // import styled from "styled-components";
 // utilizando o styled-components
 // o styled-components será uilizado como um componente
